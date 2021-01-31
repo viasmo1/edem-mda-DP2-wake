@@ -2,7 +2,7 @@
 <template encoding-version="1.3">
     <description></description>
     <groupId>29191206-0177-1000-f8d0-628427b13e92</groupId>
-    <name>Wake_DataProject2_NifiTemplate</name>
+    <name>WakeTeam_DataProject2_NifiTemplate</name>
     <snippet>
         <processors>
             <id>02b79dd5-2aea-3f46-0000-000000000000</id>
@@ -430,7 +430,7 @@
                     </entry>
                     <entry>
                         <key>Return Type</key>
-                        <value>auto-detect</value>
+                        <value>json</value>
                     </entry>
                     <entry>
                         <key>Path Not Found Behavior</key>
@@ -442,7 +442,7 @@
                     </entry>
                     <entry>
                         <key>text</key>
-                        <value>$.extended_tweet.full_text</value>
+                        <value>$.text</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -814,13 +814,14 @@
                 <properties>
                     <entry>
                         <key>Attributes List</key>
+                        <value>people_age,people_beach,people_city,people_members,people_name,people_nature,people_party,people_salary</value>
                     </entry>
                     <entry>
                         <key>attributes-to-json-regex</key>
                     </entry>
                     <entry>
                         <key>Destination</key>
-                        <value>flowfile-attribute</value>
+                        <value>flowfile-content</value>
                     </entry>
                     <entry>
                         <key>Include Core Attributes</key>
@@ -1153,7 +1154,7 @@
                     </entry>
                     <entry>
                         <key>people_age</key>
-                        <value>I am\s(.*?)€</value>
+                        <value>am\s(.*?)\syears</value>
                     </entry>
                     <entry>
                         <key>people_beach</key>
@@ -1181,7 +1182,7 @@
                     </entry>
                     <entry>
                         <key>people_salary</key>
-                        <value>my salary is\s(.*?)€</value>
+                        <value>my salary is\s(.*?)\syearly</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -1496,10 +1497,12 @@
                     <entry>
                         <key>jolt-spec</key>
                         <value>[{
-		"operation": "shift",
-		"spec": {
-			"text": "text"
+	"operation": "shift",
+	"spec": {
+		"extended_tweet": {
+			"full_text": "text"
 		}
+	}
 }]</value>
                     </entry>
                     <entry>
@@ -1662,5 +1665,5 @@
             <type>org.apache.nifi.processors.twitter.GetTwitter</type>
         </processors>
     </snippet>
-    <timestamp>01/29/2021 18:31:46 UTC</timestamp>
+    <timestamp>01/31/2021 09:08:27 UTC</timestamp>
 </template>
