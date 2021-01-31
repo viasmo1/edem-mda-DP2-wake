@@ -84,8 +84,8 @@
             <id>4bbb4348-9e06-3f4f-0000-000000000000</id>
             <parentGroupId>f31f060f-d621-3f2e-0000-000000000000</parentGroupId>
             <position>
-                <x>498.1517791748047</x>
-                <y>986.924072265625</y>
+                <x>496.0</x>
+                <y>992.0</y>
             </position>
             <bundle>
                 <artifact>nifi-kafka-2-0-nar</artifact>
@@ -855,8 +855,8 @@
             <id>6aee1dc7-c9db-3f9c-0000-000000000000</id>
             <parentGroupId>f31f060f-d621-3f2e-0000-000000000000</parentGroupId>
             <position>
-                <x>498.1517791748047</x>
-                <y>829.84814453125</y>
+                <x>494.09490966796875</x>
+                <y>833.9051513671875</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1182,7 +1182,7 @@
                     </entry>
                     <entry>
                         <key>people_salary</key>
-                        <value>my salary is\s(.*?)\syearly</value>
+                        <value>my salary is\s(.*?)€</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -1208,8 +1208,8 @@
             <id>a3dd6dc0-7dbd-37a4-0000-000000000000</id>
             <parentGroupId>f31f060f-d621-3f2e-0000-000000000000</parentGroupId>
             <position>
-                <x>506.1517791748047</x>
-                <y>661.84814453125</y>
+                <x>502.09490966796875</x>
+                <y>665.9051513671875</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1537,7 +1537,7 @@
             <id>db0f045d-4809-352b-0000-000000000000</id>
             <parentGroupId>f31f060f-d621-3f2e-0000-000000000000</parentGroupId>
             <position>
-                <x>256.0</x>
+                <x>248.0</x>
                 <y>0.0</y>
             </position>
             <bundle>
@@ -1665,5 +1665,5 @@
             <type>org.apache.nifi.processors.twitter.GetTwitter</type>
         </processors>
     </snippet>
-    <timestamp>01/31/2021 09:08:27 UTC</timestamp>
+    <timestamp>01/31/2021 09:40:46 UTC</timestamp>
 </template>
