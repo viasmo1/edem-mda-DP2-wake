@@ -10,7 +10,21 @@ services:
     ports:
       - '8090:8090'
     environment:
-      - NIFI_WEB_HTTP_PORT=8090     
+      - NIFI_WEB_HTTP_PORT=8090    
+
+  # Jupyter: Notebook Analytics
+  jupyter:
+    image: 'jupyter/pyspark-notebook:spark-2'
+    hostname: jupyterPySpark
+    container_name: jupyterPySpark
+    user: root
+    environment:
+      - JUPYTER_TOKEN=edem
+    volumes:
+      - ./config/spark-defaults.conf:/usr/local/spark-2.4.5-bin-hadoop2.7/conf/spark-defaults.conf
+      - ./data:/tmp/data
+    ports:
+      - '8888:8888'
      
   zookeeper:
     image: confluentinc/cp-zookeeper:5.4.0
