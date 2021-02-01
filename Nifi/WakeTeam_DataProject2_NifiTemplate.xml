@@ -1229,19 +1229,19 @@
                     </entry>
                     <entry>
                         <key>house_city</key>
-                        <value>in\s(.*?)\s</value>
+                        <value>house in\s(.*?)\s</value>
                     </entry>
                     <entry>
                         <key>house_code</key>
-                        <value>code\s(.*?)\s</value>
+                        <value>with code\s(.*?)\s</value>
                     </entry>
                     <entry>
                         <key>house_rent</key>
-                        <value>of\s(.*?)€\s</value>
+                        <value>cost of\s(.*?)€\s</value>
                     </entry>
                     <entry>
                         <key>house_rooms</key>
-                        <value>with\s(.*?)\srooms</value>
+                        <value>,\swith\s(.*?)\srooms</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -1898,7 +1898,7 @@
                     </entry>
                     <entry>
                         <key>people_age</key>
-                        <value>am\s(.*?)\syears</value>
+                        <value>I am\s(.*?)\syears</value>
                     </entry>
                     <entry>
                         <key>people_beach</key>
@@ -1910,11 +1910,11 @@
                     </entry>
                     <entry>
                         <key>people_members</key>
-                        <value>are\s(.*?)\smembers</value>
+                        <value>family are\s(.*?)\smembers</value>
                     </entry>
                     <entry>
                         <key>people_name</key>
-                        <value>is\s(.*?),\smy</value>
+                        <value>My name is\s(.*?),\smy</value>
                     </entry>
                     <entry>
                         <key>people_nature</key>
@@ -2040,5 +2040,5 @@
             <type>org.apache.nifi.processors.standard.AttributesToJSON</type>
         </processors>
     </snippet>
-    <timestamp>02/01/2021 18:15:15 UTC</timestamp>
+    <timestamp>02/01/2021 20:07:13 UTC</timestamp>
 </template>
