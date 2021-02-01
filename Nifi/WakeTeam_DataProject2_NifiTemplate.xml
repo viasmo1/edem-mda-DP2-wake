@@ -456,8 +456,8 @@
             <id>30e9c9ad-6179-3980-0000-000000000000</id>
             <parentGroupId>afd1c03b-bc78-31f3-0000-000000000000</parentGroupId>
             <position>
-                <x>235.0905303955078</x>
-                <y>168.0</y>
+                <x>237.0</x>
+                <y>166.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -500,6 +500,12 @@
                         </value>
                     </entry>
                     <entry>
+                        <key>tweet_id</key>
+                        <value>
+                            <name>tweet_id</name>
+                        </value>
+                    </entry>
+                    <entry>
                         <key>user_id</key>
                         <value>
                             <name>user_id</name>
@@ -529,6 +535,10 @@
                     <entry>
                         <key>text</key>
                         <value>$.text</value>
+                    </entry>
+                    <entry>
+                        <key>tweet_id</key>
+                        <value>$.id_str</value>
                     </entry>
                     <entry>
                         <key>user_id</key>
@@ -1992,7 +2002,7 @@
                 <properties>
                     <entry>
                         <key>Attributes List</key>
-                        <value>people_age,people_beach,people_city,people_members,people_name,people_nature,people_party,people_salary</value>
+                        <value>tweet_id,people_age,people_beach,people_city,people_members,people_name,people_nature,people_party,people_salary</value>
                     </entry>
                     <entry>
                         <key>attributes-to-json-regex</key>
@@ -2030,5 +2040,5 @@
             <type>org.apache.nifi.processors.standard.AttributesToJSON</type>
         </processors>
     </snippet>
-    <timestamp>01/31/2021 20:02:10 UTC</timestamp>
+    <timestamp>02/01/2021 18:15:15 UTC</timestamp>
 </template>
