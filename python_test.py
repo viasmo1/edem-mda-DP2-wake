@@ -12,10 +12,10 @@ cities = pd.DataFrame(data=d, index=city_list)
 cities
 
 hobbies = ["10", "10", "10", "10"]
-hobbies = hobbies.astype("int32")
 
 
 def best_city(df, hobbies):
+    hobbies = [int(i) for i in hobbies]
     df = abs(df - hobbies)
     df["total"] = df.sum(axis=1)
     df = df.sort_values("total")
@@ -24,14 +24,3 @@ def best_city(df, hobbies):
 
 
 best_city(cities, hobbies)
-
-
-cities.subtract(hobbies, axis=1)
-
-cities = cities - hobbies
-
-cities["total"] = cities.sum(axis=1)
-
-cities = cities.sort_values("total")
-
-cities.index.values[0]
