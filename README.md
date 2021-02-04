@@ -71,7 +71,7 @@ docker-compose up -d
 
 **Components**
 
-| Component | Port |  |
+| Component | Port |
 | --- | --- | --- |
 | Nifi | 8090 | 
 | Jupyter Notebook | 8888 |
