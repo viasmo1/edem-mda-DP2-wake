@@ -73,12 +73,12 @@ docker-compose up -d
 
 | Component | Port |  |
 | --- | --- | --- |
-| Nifi | 8090 | Data tool ingestion |
-| Jupyter Notebook | 8888 | Streaming processing with Spark Streaming |
-| Kafka-Broker | 9092 | real-time messaging |
-| Kakfa-Zookeeper| 2181 | real-time messaging |
-| Elasticsearch | Durable Storage |
-| Kibana | 5601 | Data Monitoring |
+| Nifi | 8090 | 
+| Jupyter Notebook | 8888 |
+| Kafka-Broker | 9092 |
+| Kakfa-Zookeeper| 2181 |
+| Elasticsearch | 9200 |
+| Kibana | 5601 |
 
 
 ### Access nifi notebook and run the template
