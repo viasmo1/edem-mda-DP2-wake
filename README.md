@@ -21,7 +21,7 @@ git clone https://github.com/viasmo1/edem-mda-DP1-wake
 * Go to the repo's folder
 
 ```sh
- cd edem-mda-DP1-wake
+ cd edem-mda-DP2-wake
 ```
 
 * Run the docker-compose
