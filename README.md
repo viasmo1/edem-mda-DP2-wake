@@ -10,6 +10,45 @@
 
 ## Program setup
 
+### Create a VM instance in GCP
+
+1. Enter your [google cloud console](https://console.cloud.google.com)
+2. Click on CREATE INSTANCE and set up the VM instance with the following configuration:
+
+    * Name: *instance_name*
+    * Region and zone: *select the closest one*
+    * Machine type: *e2-medium*
+    * Boot disk: 
+        * OS: *Container Optimized OS*
+        * Size: *50GB*
+    * Firewall: *Allow HTTP and HTTPS*
+    * Networking: *Add network tag* **docker-ports**
+    
+3. Click on CREATE FIREWALL RULE and set up the new rule with the following configuration:
+
+    * Name: *rule_name*
+    * Direction of traffic: *Ingress*
+    * Targets: *Specified target tags*
+    * Target tags: **docker-ports**
+    * Source filters: *IP ranges*
+    * Source Ip ranges: **0.0.0.0/0**
+    * Protocols and ports: *Specified protocols and ports* -> *tcp* -> *8090, 5601, 8888, 9200, 9092, 2181*
+
+4. Navigate to COMPUTE -> Compute Engine -> VM Instances and click on **SSH** to enter you VM console and run the following comands 
+
+```sh
+docker run docker/compose:1.27.4
+```
+```sh
+echo alias docker-compose="'"'docker run \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v "$PWD:$PWD" \
+    -w="$PWD" \
+    docker/compose:1.27.4'"'" >> ~/.bashrc
+
+source ~/.bashrc
+```
+
 ### Clone the repo and run containers
 
 * Git clone the following repo: [edem-mda-DP2-wake](https://github.com/viasmo1/edem-mda-DP2-wake)
@@ -29,6 +68,18 @@ git clone https://github.com/viasmo1/edem-mda-DP1-wake
 ```sh
 docker-compose up -d
 ```
+
+**Components**
+
+| Component | Port |  |
+| --- | --- | --- |
+| Nifi | 8090 | Data tool ingestion |
+| Jupyter Notebook | 8888 | Streaming processing with Spark Streaming |
+| Kafka-Broker | 9092 | real-time messaging |
+| Kakfa-Zookeeper| 2181 | real-time messaging |
+| Elasticsearch | Durable Storage |
+| Kibana | 5601 | Data Monitoring |
+
 
 ### Access nifi notebook and run the template
 
