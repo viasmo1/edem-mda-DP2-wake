@@ -54,7 +54,7 @@ source ~/.bashrc
 * Git clone the following repo: [edem-mda-DP2-wake](https://github.com/viasmo1/edem-mda-DP2-wake)
 
 ```sh
-git clone https://github.com/viasmo1/edem-mda-DP1-wake
+git clone https://github.com/viasmo1/edem-mda-DP2-wake
 ```
 
 * Go to the repo's folder
@@ -83,7 +83,7 @@ docker-compose up -d
 
 ### Access nifi notebook and run the template
 
-* Go to [localhost:8090/nifi](https://localhost:8090/nifi)
+* Go to ***instance_url*:8090/nifi**
 
 * Upload the template *WakeTeam_DataProject2_NifiTemplate.xml* available in the Nifi folder
 
@@ -93,7 +93,7 @@ docker-compose up -d
 
 ### Access jupyter notebook and run the file
 
-* Go to [localhost:8888](https://localhost:8888)
+* Go to ***instance_url*:8888**
 
 * Upload the file *DP2-WakeTeam.ipynb*
 
