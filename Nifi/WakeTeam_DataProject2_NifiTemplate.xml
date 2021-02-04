@@ -2,33 +2,8 @@
 <template encoding-version="1.3">
     <description></description>
     <groupId>68168fea-0177-1000-8801-f80b2fbc0291</groupId>
-    <name>Wake_Dataproject2_NifiTemplate</name>
+    <name>WakeTeam_DataProject2_NifiTemplate</name>
     <snippet>
-        <connections>
-            <id>06dac38f-276e-343e-0000-000000000000</id>
-            <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>1a90f48d-7e0d-39d8-0000-000000000000</groupId>
-                <id>cd3ae703-530c-3b20-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>matched</selectedRelationships>
-            <source>
-                <groupId>1a90f48d-7e0d-39d8-0000-000000000000</groupId>
-                <id>64605019-dafa-3ddf-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
         <connections>
             <id>1fbfc5ee-b251-3c54-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
@@ -50,6 +25,56 @@
             <source>
                 <groupId>1a90f48d-7e0d-39d8-0000-000000000000</groupId>
                 <id>67b051f6-f3f1-3bb2-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>28ae822c-ab5f-394f-0000-000000000000</id>
+            <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>1a90f48d-7e0d-39d8-0000-000000000000</groupId>
+                <id>ebe27e5a-e440-3b0a-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>House</selectedRelationships>
+            <source>
+                <groupId>1a90f48d-7e0d-39d8-0000-000000000000</groupId>
+                <id>424e30c4-6b3a-3403-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>2f7bb482-8f7e-3820-0000-000000000000</id>
+            <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>1a90f48d-7e0d-39d8-0000-000000000000</groupId>
+                <id>cd3ae703-530c-3b20-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>Name</selectedRelationships>
+            <source>
+                <groupId>1a90f48d-7e0d-39d8-0000-000000000000</groupId>
+                <id>424e30c4-6b3a-3403-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
@@ -180,31 +205,6 @@
             <zIndex>0</zIndex>
         </connections>
         <connections>
-            <id>938686aa-dba8-3c21-0000-000000000000</id>
-            <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>1a90f48d-7e0d-39d8-0000-000000000000</groupId>
-                <id>ebe27e5a-e440-3b0a-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>matched</selectedRelationships>
-            <source>
-                <groupId>1a90f48d-7e0d-39d8-0000-000000000000</groupId>
-                <id>64605019-dafa-3ddf-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
             <id>95c3d3b5-4226-30ec-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
@@ -308,7 +308,7 @@
             <id>0f6b6902-c09e-3c7b-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>655.2675170898438</x>
+                <x>711.2675170898438</x>
                 <y>835.4442443847656</y>
             </position>
             <bundle>
@@ -399,7 +399,7 @@
             <id>3310e8c1-5e94-34c9-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>174.7143096923828</x>
+                <x>230.7143096923828</x>
                 <y>494.6238098144531</y>
             </position>
             <bundle>
@@ -506,7 +506,7 @@
             <id>424e30c4-6b3a-3403-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>390.7143096923828</x>
+                <x>446.7143096923828</x>
                 <y>326.6238098144531</y>
             </position>
             <bundle>
@@ -582,7 +582,7 @@
             <id>46dec70c-0ad2-39d7-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>170.8869171142578</x>
+                <x>226.8869171142578</x>
                 <y>822.6238098144531</y>
             </position>
             <bundle>
@@ -673,7 +673,7 @@
             <id>64605019-dafa-3ddf-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>394.0</x>
+                <x>450.0</x>
                 <y>166.0</y>
             </position>
             <bundle>
@@ -789,7 +789,7 @@
             <id>67b051f6-f3f1-3bb2-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>392.0905303955078</x>
+                <x>448.0905303955078</x>
                 <y>0.0</y>
             </position>
             <bundle>
@@ -920,7 +920,7 @@
             <id>689573bd-ed35-37fe-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>654.7143096923828</x>
+                <x>710.7143096923828</x>
                 <y>670.6238098144531</y>
             </position>
             <bundle>
@@ -1142,7 +1142,7 @@
             <id>71fc78e6-5d86-3ff0-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>657.172607421875</x>
+                <x>713.172607421875</x>
                 <y>993.5390930175781</y>
             </position>
             <bundle>
@@ -1434,7 +1434,7 @@
             <id>823daee6-afe9-36c3-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>170.8869171142578</x>
+                <x>226.8869171142578</x>
                 <y>662.6238098144531</y>
             </position>
             <bundle>
@@ -1696,7 +1696,7 @@
             <id>a8e638c0-aaf8-337b-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>165.34521484375</x>
+                <x>221.34521484375</x>
                 <y>978.9299621582031</y>
             </position>
             <bundle>
@@ -1989,7 +1989,7 @@
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
                 <x>0.0</x>
-                <y>168.0</y>
+                <y>336.0</y>
             </position>
             <bundle>
                 <artifact>nifi-elasticsearch-nar</artifact>
@@ -2152,6 +2152,7 @@
                     </entry>
                     <entry>
                         <key>put-es-id-attr</key>
+                        <value>tweet_id</value>
                     </entry>
                     <entry>
                         <key>put-es-index</key>
@@ -2197,8 +2198,8 @@
             <id>ebe27e5a-e440-3b0a-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>784.0</x>
-                <y>160.0</y>
+                <x>928.0</x>
+                <y>328.0</y>
             </position>
             <bundle>
                 <artifact>nifi-elasticsearch-nar</artifact>
@@ -2361,6 +2362,7 @@
                     </entry>
                     <entry>
                         <key>put-es-id-attr</key>
+                        <value>tweet_id</value>
                     </entry>
                     <entry>
                         <key>put-es-index</key>
@@ -2406,7 +2408,7 @@
             <id>fde0997b-c535-3cf9-0000-000000000000</id>
             <parentGroupId>1a90f48d-7e0d-39d8-0000-000000000000</parentGroupId>
             <position>
-                <x>650.0</x>
+                <x>706.0</x>
                 <y>494.0</y>
             </position>
             <bundle>
@@ -2508,5 +2510,5 @@
             <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
         </processors>
     </snippet>
-    <timestamp>02/04/2021 22:31:49 UTC</timestamp>
+    <timestamp>02/04/2021 23:31:00 UTC</timestamp>
 </template>
