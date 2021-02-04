@@ -46,7 +46,7 @@ docker-compose up -d
 
 * Upload the file *DP2-WakeTeam.ipynb*
 
-* Enter your twitter API credentials in the *Twitter autentication cell*
+* Enter your twitter API credentials in the *Twitter authentication cell*
 
 * Run all cells
 
