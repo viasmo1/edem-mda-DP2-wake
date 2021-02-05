@@ -81,6 +81,25 @@ docker-compose up -d
 | Kibana | 5601 |
 
 
+### Dealing with the data in Elasticsearch
+
+* Go to ***instance_url*:5601**
+
+* Create the index *families* and *flats* and map the *timestamp_ms* property with a date data type:
+
+    ```sh
+    {
+        "mappings": {
+            "properties": {
+                "timestamp_ms": {
+                    "type": "date" 
+                }
+            }
+        }
+    }
+    ```
+
+
 ### Access nifi notebook and run the template
 
 * Go to ***instance_url*:8090/nifi**
@@ -101,6 +120,13 @@ docker-compose up -d
 
 * Run all cells
 
+### Access Kibana and create the indices
+
+* Access ***instance_url*:5601**
+
+* Go to Index Pattern and create one patern for *families* and another one for *flats*. Don't forget to select *timestamp_ms* as date filter.
+
 ## CONGRATULATIONS
 
 You're all set! Your clients will start receiving your tweet replies!
+You will alse visualise and control your application using Kibana!
