@@ -85,7 +85,7 @@ docker-compose up -d
 
 * Go to ***instance_url*:5601**
 
-* Create the index *families* and *flats* and map the *timestamp_ms* property with a date data type:
+* Create the index *families*, *flats* and *match* and map the *timestamp_ms* property with a date data type:
 
     ```sh
     {
@@ -130,3 +130,5 @@ docker-compose up -d
 
 You're all set! Your clients will start receiving your tweet replies!
 You will alse visualise and control your application using Kibana!
+
+![dashboard](img/dashboard.png)
