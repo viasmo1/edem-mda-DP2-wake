@@ -126,6 +126,10 @@ docker-compose up -d
 
 * Go to Index Pattern and create one patern for *families* and another one for *flats*. Don't forget to select *timestamp_ms* as date filter.
 
+## VIDEO
+
+[App Wake](https://www.youtube.com/watch?v=bQes1Oz1c6s)
+
 ## CONGRATULATIONS
 
 You're all set! Your clients will start receiving your tweet replies!
